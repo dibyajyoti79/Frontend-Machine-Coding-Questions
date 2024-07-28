@@ -21,7 +21,7 @@ const arr = [
   "C",
   ".",
 ];
-const page = () => {
+const Calculator = () => {
   const [value, setValue] = useState("");
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
@@ -79,4 +79,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Calculator;
