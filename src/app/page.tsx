@@ -10,6 +10,10 @@ const cards = [
     title: "StarRating App",
     route: "/star-rating",
   },
+  {
+    title: "Memory Game",
+    route: "/memory-game",
+  },
 ];
 
 export default function Home() {
