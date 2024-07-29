@@ -14,6 +14,10 @@ const cards = [
     title: "Memory Game",
     route: "/memory-game",
   },
+  {
+    title: "Bar Chart",
+    route: "/bar-chart",
+  },
 ];
 
 export default function Home() {
