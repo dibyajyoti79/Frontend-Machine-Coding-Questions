@@ -54,7 +54,10 @@ const BarChart = () => {
             </div>
             {frequency &&
               Object.entries(frequency).map(([key, val]) => (
-                <div className="flex-1 relative flex flex-col items-center">
+                <div
+                  className="flex-1 relative flex flex-col items-center"
+                  key={key}
+                >
                   <div
                     className="w-5 bg-pink-600 absolute bottom-0 transition-height"
                     style={{
