@@ -18,6 +18,10 @@ const cards = [
     title: "Bar Chart",
     route: "/bar-chart",
   },
+  {
+    title: "Tic Toc Toe",
+    route: "/tac-toc-toe",
+  },
 ];
 
 export default function Home() {
