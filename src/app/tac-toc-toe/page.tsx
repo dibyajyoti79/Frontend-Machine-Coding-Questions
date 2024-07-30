@@ -13,6 +13,7 @@ const TicTocToe = () => {
   const handleUserClick = (e: MouseEvent<HTMLDivElement>) => {
     if (won) return;
     const pos: string = (e.target as HTMLDivElement).id;
+    if (matrix[parseInt(pos)] !== null) return;
     const copyMatrix = [...matrix];
     copyMatrix[parseInt(pos)] = isXTurn ? "X" : "O";
     setMatrix(copyMatrix);
