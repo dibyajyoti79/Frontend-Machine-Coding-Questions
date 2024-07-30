@@ -19,8 +19,8 @@ const cards = [
     route: "/bar-chart",
   },
   {
-    title: "Tic Toc Toe",
-    route: "/tac-toc-toe",
+    title: "Tic Tac Toe",
+    route: "/tac-tac-toe",
   },
 ];
 

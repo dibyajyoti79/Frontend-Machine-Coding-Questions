@@ -3,7 +3,7 @@ import { MouseEvent, useEffect, useState } from "react";
 import useWindowSize from "react-use/lib/useWindowSize";
 import Confetti from "react-confetti";
 
-const TicTocToe = () => {
+const TicTacToe = () => {
   const { width, height } = useWindowSize();
   const [matrix, setMatrix] = useState(Array(9).fill(null));
   const [isXTurn, setIsXTurn] = useState(true);
@@ -49,7 +49,7 @@ const TicTocToe = () => {
     <>
       <div className="flex items-center justify-center m-6">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-semibold">Tic Toc Toe</h1>
+          <h1 className="text-4xl font-semibold">Tic Tac Toe</h1>
           <div
             className="grid grid-cols-3 grid-rows-3 mt-6"
             id="2"
@@ -59,10 +59,10 @@ const TicTocToe = () => {
               <div
                 key={index}
                 id={index.toString()}
-                className={`h-20 w-20 bg-neutral border border-gray-600 flex justify-center items-center text-2xl cursor-pointer hover:bg-gray-500 hover:text-gray-950 ${
+                className={`h-20 w-20 border border-gray-600 flex justify-center items-center text-2xl cursor-pointer ${
                   winningRow.length && winningRow.includes(index)
                     ? "bg-green-500 text-gray-950 hover:bg-green-500"
-                    : ""
+                    : "bg-neutral hover:bg-gray-500 hover:text-gray-950"
                 }`}
               >
                 {item}
@@ -85,4 +85,4 @@ const TicTocToe = () => {
     </>
   );
 };
-export default TicTocToe;
+export default TicTacToe;
