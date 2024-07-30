@@ -20,7 +20,7 @@ const cards = [
   },
   {
     title: "Tic Tac Toe",
-    route: "/tac-tac-toe",
+    route: "/tic-tac-toe",
   },
 ];
 
